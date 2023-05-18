@@ -34,7 +34,7 @@ struct Graph{
     void print(){
         //lets iterate through each node and print its neighbours
         for (int i = 0; i < n; i++) {
-            cout << nodes[i].label << " : ";
+            cout << nodes[i+1].label << " --> ";
             for (int neighbour : nodes[i].neighbours) {
                 cout << neighbour << " ";
             }
