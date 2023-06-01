@@ -1,8 +1,10 @@
-///////////////////////////////// THIS GIVES THE BEST CITY THAT YOU SHOULD BUILD HOSPITAL IN ////////////////////////////////////////////////////
+///////////////////////////////// THIS GIVES THE AVERAGE TIME FOR EACH CITY  ////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <vector>
 #include <queue>
 #include <limits>
+#include <list>
 
 using namespace std;
 
@@ -48,12 +50,14 @@ int main() {
         }
     }
 
-    int arr[6];
+    //int arr[6];
+    
+   
     for (int i = 0; i < n; ++i) {
         
         int sum =0;
         int source;
-        cout << "Enter source node " << i <<" :";
+        cout << endl<< "Enter source node " << i <<" :";
         cin >> source;
 
         vector<int> shortest_distances = Dijkstra(adjacencyMatrix, source);
@@ -68,16 +72,9 @@ int main() {
                 cout << "No path exists" << endl;
             }
         }
-        arr[i] = sum;
-    }
-    int min = INT_MAX;
-    int flag = 0;
-    for(int i = 0; i <n; i++){
-        if (arr[i] < min){ 
-            min = arr[i];
-            flag ++;
-        }
-    }
-    cout << "city " << flag << " is the best to build the hospital";
+
+        cout << "The average time for city "<< i<< " is : "<< sum/5 <<endl<<endl;
+    }    
+   
     return 0;
 }
