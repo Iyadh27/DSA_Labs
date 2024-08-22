@@ -1,5 +1,3 @@
-Here's a comprehensive README for your DSA labs repository:
-
 ---
 
 # Data Structures and Algorithms (DSA) Labs
