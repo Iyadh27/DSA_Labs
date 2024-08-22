@@ -15,7 +15,6 @@ This repository contains a collection of Data Structures and Algorithms (DSA) la
 4. [Technologies Used](#technologies-used)
 5. [Features](#features)
 6. [Contributing](#contributing)
-7. [License](#license)
 
 ## Lab Topics
 
